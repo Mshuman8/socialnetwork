@@ -57,12 +57,12 @@ def check_login():
 
 #this is where you add a post   
 @app.route('/homepage', methods = ["GET", "POST"])
-def post(username):
+def post():
     if request.method == "GET":
         return render_template("homepage.html")
     else:
         mypost = request.form["mypost"]
-        # username = request.form["username"]
+        username = request.form["username"]
         time = datetime.datetime.now()
         print(mypost)
         # print(username)

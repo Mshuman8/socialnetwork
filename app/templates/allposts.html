@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Posts</title>
+    </head>
+    <body>
+      <h1>Posts</h1>
+      <div class="event-list">
+        <ul>
+          {% for post in posts %}
+            <li>{{ post.username }} : {{ post.post }}(<a href = "/name/{{post.username}}">{{ post.username }}</a>)</li>
+          {% endfor %}
+        </ul>
+        <a href="/login">Want to post again?</a>
+      </div>
+    </body>
+</html>
+

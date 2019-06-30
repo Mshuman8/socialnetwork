@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>{{username}} Homepage</title>
+    </head>
+    <body>
+      <h1>{{username}} Homepage</h1>
+      <h1>Your posts</h1>
+      <div class="event-list">
+        <form method = "post" action = "/homepage">
+          <label for = "mypost">What would you like to post?</label>
+          <input type = "text" name = "mypost">
+          <label for = "username">Verify who you are</label>
+          <input type = "radio" name = "username" value ={{username}}>{{username}}
+          <input type = "submit" value = "submit">
+        </form>
+      </div>
+    </body>
+</html>
